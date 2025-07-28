@@ -199,15 +199,17 @@ main {
   flex-wrap: wrap;
   padding: 2% 4%;
   gap: 2%;
+  justify-content: center; /* Ensure the content is centered */
 }
 
 aside {
-  flex: 1 1 200px;
-  max-width: 250px;
+  flex: 1 1 100%; /* Make aside take full width on small screens */
+  max-width: 100%;
   background: white;
   padding: 2%;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2%; /* Add some margin to separate from content */
 }
 
 aside h3 {
@@ -232,7 +234,7 @@ aside li:hover {
 
 /* Showcase Section */
 .main-showcase {
-  flex: 2 1 400px;
+  flex: 2 1 100%; /* Allow this section to take full width on smaller screens */
   display: flex;
   flex-wrap: wrap;
   background: white;
@@ -262,15 +264,16 @@ aside li:hover {
 }
 
 .card {
-  flex: 1 1 200px;
+  flex: 1 1 100%; /* Make cards full-width on small screens */
   max-width: 220px;
   border: 1px solid #ddd;
   padding: 1em;
   border-radius: 8px;
   background: #fff;
   text-align: center;
-  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
+  margin-bottom: 2%; /* Add space below cards */
 }
 
 .card:hover {
@@ -344,6 +347,7 @@ footer {
 
   .card {
     max-width: 45%;
+    margin-bottom: 2%; /* Ensure proper spacing */
   }
 }
 
@@ -362,5 +366,42 @@ footer {
   }
 
   aside {
-    flex: 1 1 100%;
-    max-width: 
+    flex: 1 1 100%; /* Full-width aside */
+    margin-bottom: 1em; /* Space out the aside from other sections */
+  }
+
+  .card {
+    max-width: 100%; /* Full-width cards for mobile */
+    margin-bottom: 2%; /* Margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem; /* Smaller font for mobile */
+  }
+
+  header, .header-top, .search-bar {
+    padding: 10px 5%; /* Adjust header padding */
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 1em;
+  }
+
+  .user-section {
+    flex-direction: column; /* Stack user section elements vertically */
+  }
+
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    width: 100%; /* Make form elements fill the screen */
+  }
+
+  .main-showcase {
+    flex: 1 1 100%; /* Full width on small screens */
+    padding: 2% 0;
+  }
+}
