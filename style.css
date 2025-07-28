@@ -18,8 +18,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #fffafa;
-  padding: 8px 20px;
-  font-size: 14px;
+  padding: 1em 2% /* Using percentage for padding */;
+  font-size: 1rem;
   border-bottom: 1px solid #ddd;
   flex-wrap: wrap;
 }
@@ -30,14 +30,14 @@ body {
 
 .header-top strong {
   color: #e60023;
-  margin-left: 5px;
+  margin-left: 0.5em;
   font-weight: bold;
 }
 
 .header-top .top-links {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1em;
   flex-wrap: wrap;
 }
 
@@ -53,11 +53,11 @@ body {
 }
 
 .header-top .top-links select {
-  padding: 4px 8px;
+  padding: 0.25em 0.5em;
   border: 1px solid #ccc;
   border-radius: 4px;
   background: white;
-  font-size: 13px;
+  font-size: 0.875rem;
 }
 
 /* Header */
@@ -65,35 +65,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 2% 5%; /* Padding is now a percentage for better scaling */
   background: white;
   border-bottom: 1px solid #ddd;
   flex-wrap: wrap;
-  gap: 15px;
-  flex-direction: column; /* Stacking logo and nav */
+  gap: 2%;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #0044ff;
 }
 
 .logo span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #555;
-  margin-left: 5px;
+  margin-left: 0.5em;
 }
 
 /* Navigation */
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 2em;
   list-style: none;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  justify-content: center; /* Center items on small screens */
+  justify-content: center;
 }
 
 nav a {
@@ -111,12 +110,12 @@ nav a:hover {
 .user-section {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1em;
   flex-wrap: wrap;
 }
 
 .user-section button {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ff3366;
   background: transparent;
   border: none;
@@ -129,7 +128,7 @@ nav a:hover {
 }
 
 .user-section a {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   text-decoration: none;
   font-weight: bold;
@@ -141,14 +140,14 @@ nav a:hover {
 }
 
 .user-section .cart {
-  font-size: 14px;
+  font-size: 0.875rem;
   background: #fff;
-  padding: 6px 12px;
+  padding: 0.5em 1em;
   border: 1px solid #ccc;
   border-radius: 6px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5em;
 }
 
 .user-section .cart span {
@@ -161,24 +160,23 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1.25em 2%;
   background: linear-gradient(to right, #0044ff, #66a3ff);
-
   color: white;
-  gap: 10px;
+  gap: 1em;
 }
 
 .search-bar select,
 .search-bar input {
-  padding: 8px;
-  font-size: 14px;
+  padding: 0.5em;
+  font-size: 1rem;
   border: none;
   border-radius: 4px;
   min-width: 150px;
 }
 
 .search-bar button {
-  padding: 8px 12px;
+  padding: 0.5em 1em;
   background: white;
   color: #0044ff;
   font-weight: bold;
@@ -190,8 +188,8 @@ nav a:hover {
 .promo {
   margin-left: auto;
   display: flex;
-  gap: 20px;
-  font-size: 12px;
+  gap: 2em;
+  font-size: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -199,22 +197,22 @@ nav a:hover {
 main {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  gap: 20px;
+  padding: 2% 4%;
+  gap: 2%;
 }
 
 aside {
   flex: 1 1 200px;
   max-width: 250px;
   background: white;
-  padding: 20px;
+  padding: 2%;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
 aside h3 {
   color: red;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 aside ul {
@@ -223,7 +221,7 @@ aside ul {
 }
 
 aside li {
-  margin: 8px 0;
+  margin: 0.5em 0;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -239,8 +237,8 @@ aside li:hover {
   flex-wrap: wrap;
   background: white;
   border-radius: 8px;
-  padding: 20px;
-  gap: 20px;
+  padding: 2%;
+  gap: 2%;
   align-items: center;
   justify-content: center;
 }
@@ -255,10 +253,10 @@ aside li:hover {
 .product-highlight {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 2%;
+  padding: 2%;
   background: white;
-  margin-top: 20px;
+  margin-top: 2%;
   border-radius: 8px;
   justify-content: center;
 }
@@ -267,7 +265,7 @@ aside li:hover {
   flex: 1 1 200px;
   max-width: 220px;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 1em;
   border-radius: 8px;
   background: #fff;
   text-align: center;
@@ -284,17 +282,17 @@ aside li:hover {
   height: 150px;
   object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .card h4 {
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
 }
 
 .card p {
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 0.875rem;
+  margin: 0.5em 0;
 }
 
 .price {
@@ -305,17 +303,17 @@ aside li:hover {
 .old-price {
   text-decoration: line-through;
   color: #aaa;
-  margin-left: 5px;
+  margin-left: 0.5em;
 }
 
 .badge {
   background: green;
   color: white;
-  padding: 2px 6px;
-  font-size: 12px;
+  padding: 0.2em 0.5em;
+  font-size: 0.75rem;
   border-radius: 4px;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
 }
 
 .badge.new {
@@ -323,23 +321,32 @@ aside li:hover {
 }
 
 .tags {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: green;
-  margin-top: 5px;
+  margin-top: 0.5em;
 }
 
 /* Footer */
 footer {
   background: linear-gradient(to right, #0044ff, #66a3ff);
-
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 14px;
+  padding: 2% 5%;
+  margin-top: 2%;
+  font-size: 1rem;
 }
 
 /* Responsive Media Queries */
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column; /* Stack main content vertically for smaller screens */
+  }
+
+  .card {
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   nav ul {
     justify-content: center;
@@ -356,36 +363,4 @@ footer {
 
   aside {
     flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .card {
-    max-width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    max-width: 100%;
-  }
-
-  header, .header-top, .search-bar {
-    padding: 10px;
-    justify-content: center;
-  }
-
-  .logo {
-    text-align: center;
-    width: 100%;
-  }
-
-  nav ul {
-    gap: 10px;
-  }
-
-  main {
-    flex-direction: column; /* Stack main layout for mobile */
-    padding: 10px;
-  }
-
-  .
+    max-width: 
